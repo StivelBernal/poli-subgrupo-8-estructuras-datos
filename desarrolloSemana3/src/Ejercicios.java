@@ -25,5 +25,13 @@ public class Ejercicios {
 				
 		entrada.close();				
 	}
+	
+	public void ejercicio2() {
+						
+	}
+	
+	public void ejercicio3() {
+		
+	}
 
 }
