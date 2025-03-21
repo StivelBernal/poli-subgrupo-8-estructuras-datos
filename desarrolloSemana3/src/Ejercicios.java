@@ -1,16 +1,15 @@
-package testexamen;
-
 import java.util.Scanner;
 
-public class main {
+public class Ejercicios {
 
 	/**
-	 * Ejemplo area 3500 perimetro 240
+	 * Ejercicio 1
 	 */
-	public static void main(String[] args) {
-		Scanner entrada = new Scanner(System.in);
+	public void ejercicio1() {
 		System.out.println("Ingrese el area");
 		
+		Scanner entrada = new Scanner(System.in);
+	
 		double area = entrada.nextDouble();
 		
 		System.out.println("Ingrese el perimetro");
