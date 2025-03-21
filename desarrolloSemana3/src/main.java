@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * Politecnico Grancolombiano
  *
@@ -15,14 +17,45 @@
  *
  */
 
+import java.util.Scanner;
+
 public class main {
 
-	/**
-	 * Ejemplo area 3500 perimetro 240
-	 */
 	public static void main(String[] args) {
 		Ejercicios ejercicios = new Ejercicios();
-		ejercicios.ejercicio1();
+		
+		Integer action;
+      
+
+        // Bucle que se ejecuta hasta que el usuario elija salir (opción 3)
+        do {
+        	
+        	action = ejercicios.menu();
+
+            switch (action) {
+                case 1:
+                	
+            		ejercicios.ejercicio1();
+     
+
+                    break;
+                case 2:
+               		ejercicios.ejercicio2();
+                    break;
+                case 3:
+                	ejercicios.ejercicio2();
+                    break;
+                case 4:
+                	ejercicios.ejercicio2();
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtalo de nuevo.");
+            }
+        } while (action != 4); // El bucle continúa mientras la opción no sea 3
+        
+        ejercicios.close();
+	
 	}
 
+	
 }
