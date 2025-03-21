@@ -34,26 +34,22 @@ public class main {
 
             switch (action) {
                 case 1:
-                	
             		ejercicios.ejercicio1();
-     
-
                     break;
                 case 2:
                		ejercicios.ejercicio2();
                     break;
                 case 3:
-                	ejercicios.ejercicio2();
+                	ejercicios.ejercicio3();
                     break;
                 case 4:
-                	ejercicios.ejercicio2();
+                	ejercicios.close();
                     break;
                 default:
                     System.out.println("Opción no válida. Inténtalo de nuevo.");
             }
-        } while (action != 4); // El bucle continúa mientras la opción no sea 3
-        
-        ejercicios.close();
+        } while (action != 4); // El bucle continúa mientras la opción no sea 4
+       
 	
 	}
 
