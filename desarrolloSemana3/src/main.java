@@ -27,7 +27,7 @@ public class main {
 		Integer action;
       
 
-        // Bucle que se ejecuta hasta que el usuario elija salir (opción 3)
+        // Bucle que se ejecuta hasta que el usuario elija salir (opción 4)
         do {
         	
         	action = ejercicios.menu();
