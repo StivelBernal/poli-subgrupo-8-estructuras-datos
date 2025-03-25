@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 
 public class Ejercicios {
 	private Scanner scanner = new Scanner(System.in);;
@@ -93,10 +94,19 @@ public class Ejercicios {
 
 		ArrayList<Integer> lista2 = hacerListaInt(lengthList2);
 
-		ArrayList<Integer> intersection = new ArrayList<Integer>(lista1);
+		// ArrayList<Integer> intersection = new ArrayList<Integer>(lista1);
+		// intersection.retainAll(lista2); // Deja duplicados
+		
+	    // Encontrar la intersección usando HashSet
+        HashSet<Integer> setA = new HashSet<>(lista1);
+        ArrayList<Integer> intersection = new ArrayList<>();
 
-		intersection.retainAll(lista2);
-
+        for (int num : lista2) {
+            if (setA.contains(num) && !intersection.contains(num)) {
+            	intersection.add(num);
+            }
+        }
+        
 		if (intersection.isEmpty()) {
 			System.out.println("No hay intersección entre las dos listas.");
 		} else {
